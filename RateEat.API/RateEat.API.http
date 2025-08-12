@@ -1,0 +1,6 @@
+@RateEat.API_HostAddress = http://localhost:5274
+
+GET {{RateEat.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
