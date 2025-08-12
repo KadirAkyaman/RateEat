@@ -97,11 +97,14 @@ RateEat/
 └── RateEat.API/
 ```
 
-The **Core** project is the heart of the domain logic and has **no external dependencies**.
+- **RateEat.Core**  
+  Contains domain models, interfaces, DTOs, and validation rules.
 
-**Infrastructure** depends on Core for entity definitions and interface implementations.
+- **RateEat.Infrastructure**  
+  Includes EF Core DbContext, repositories, Dapper queries, and caching logic.
 
-**API** depends on both Core and Infrastructure, exposing functionality externally.
+- **RateEat.API**  
+  Hosts controllers, middleware, swagger configuration, API versioning, and dependency injection setup.
 
 ---
 
