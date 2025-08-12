@@ -13,7 +13,9 @@ namespace RateEat.Core.Entities
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
         public int TrustScore { get; set; }
+        public bool IsActive { get; set; } = false;
         public ICollection<Review> Reviews { get; set; }
         public ICollection<Reservation> Reservations { get; set; }
+
     }
 }

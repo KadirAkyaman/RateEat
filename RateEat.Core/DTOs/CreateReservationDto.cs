@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace RateEat.Core.DTOs
 {
-    public class CreateReservation
+    public class CreateReservationDto
     {
         public DateTime ReservationDate { get; set; }
         public int PartySize { get; set; }     

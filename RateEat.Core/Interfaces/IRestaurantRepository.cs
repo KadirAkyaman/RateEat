@@ -10,11 +10,10 @@ namespace RateEat.Core.Interfaces
     {
         Task<Restaurant> GetRestaurantByIdAsync(int id);
         Task<IEnumerable<Restaurant>> GetAllRestaurantsAsync();
-        Task<bool> AddRestaurantAsync(Restaurant restaurant);
-        Task<bool> DeleteRestaurantAsync(int id);
-        Task<bool> UpdateRestaurantAsync(Restaurant restaurant);
+        Task AddRestaurantAsync(Restaurant restaurant);
+        Task DeleteRestaurantAsync(int id);
+        Task UpdateRestaurantAsync(Restaurant restaurant);
         Task<IEnumerable<Restaurant>> GetByCuisineTypeAsync(string cuisine);
-        Task<IEnumerable<Restaurant>> GetTopRatedAsync(int count);
-        Task<double> GetAverageScoreAsync(int restaurantId);
+        Task<bool> RestaurantExistsAsync(int id);
     }
 }
