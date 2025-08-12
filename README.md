@@ -90,11 +90,12 @@ Reservation creation is a critical business process requiring atomicity:
 
 ## 🧱 Project Structure & Layer Interactions
 
+```
 RateEat/
-├── RateEat.Core/                 # Domain models, interfaces, DTOs, validation rules
-├── RateEat.Infrastructure/      # EF Core DbContext, repositories, Dapper queries, caching
-├── RateEat.API/                 # Controllers, middleware, swagger, API versioning, dependency injection
-└── RateEat.Tests/               # Unit & integration tests (optional)
+├── RateEat.Core/
+├── RateEat.Infrastructure/
+└── RateEat.API/
+```
 
 The **Core** project is the heart of the domain logic and has **no external dependencies**.
 
