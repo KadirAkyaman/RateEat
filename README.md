@@ -89,6 +89,7 @@ Reservation creation is a critical business process requiring atomicity:
 ---
 
 ## 🧱 Project Structure & Layer Interactions
+
 RateEat/
 ├── RateEat.Core/                 # Domain models, interfaces, DTOs, validation rules
 ├── RateEat.Infrastructure/      # EF Core DbContext, repositories, Dapper queries, caching
